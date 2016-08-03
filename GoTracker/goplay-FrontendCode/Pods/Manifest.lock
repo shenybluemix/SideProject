@@ -1,0 +1,47 @@
+PODS:
+  - Alamofire (3.4.1)
+  - Bolts (1.7.0):
+    - Bolts/AppLinks (= 1.7.0)
+    - Bolts/Tasks (= 1.7.0)
+  - Bolts/AppLinks (1.7.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.7.0)
+  - FBSDKCoreKit (4.13.1):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.13.1):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.13.1):
+    - FBSDKCoreKit
+  - IQKeyboardManagerSwift (4.0.0)
+  - KGModal (0.0.1)
+  - SlideMenuControllerSwift (2.1.1)
+  - SVProgressHUD (2.0.3)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - Bolts
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
+  - IQKeyboardManagerSwift (= 4.0.0)
+  - KGModal (~> 0.0.1)
+  - SlideMenuControllerSwift
+  - SVProgressHUD
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
+  FBSDKCoreKit: 2807fe0da2ddb49a1469da6d6ff597f99912980f
+  FBSDKLoginKit: 6d350cb6a22d6956e9d078885de6ee8a0ebc51b4
+  FBSDKShareKit: c9438df7573b33780ac8c3451201c5ebb260ffca
+  IQKeyboardManagerSwift: ede2a27b4e1ce053d03073b9c7fa439322f5e405
+  KGModal: d2759dbd6d5e70e7a60bb0c3ddc7c0ece6040128
+  SlideMenuControllerSwift: 82ada9b04e03538c84d034cf1c09e5849c0113f7
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: 2787f4e66547a538bb9fafaf1832eb26490bc24c
+
+COCOAPODS: 1.0.1

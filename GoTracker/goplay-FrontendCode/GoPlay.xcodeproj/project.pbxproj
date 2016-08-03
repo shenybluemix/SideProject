@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C98456E79FAB333BBD5EABD /* Pods_GoPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E71FFFA44E4938A3303A21F /* Pods_GoPlay.framework */; };
+		B50A09451CEAEC92009B3D17 /* newGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A09441CEAEC92009B3D17 /* newGoalViewController.swift */; };
+		B50A09471CEAEF9D009B3D17 /* addGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A09461CEAEF9D009B3D17 /* addGoalViewController.swift */; };
+		B52CB4F71D01821C008D2F2D /* dayShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52CB4F61D01821C008D2F2D /* dayShowViewController.swift */; };
+		B5412C071D2A6CD400D54D1A /* GetInspiredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412C061D2A6CD400D54D1A /* GetInspiredViewController.swift */; };
+		B56D06EA1CEB16E100C44FB8 /* missionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D06E91CEB16E100C44FB8 /* missionViewController.swift */; };
+		B56D06F01CEB171300C44FB8 /* legalDisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D06EF1CEB171300C44FB8 /* legalDisViewController.swift */; };
+		B56D06F21CEB175100C44FB8 /* existingGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D06F11CEB175100C44FB8 /* existingGoalViewController.swift */; };
+		B56D06F41CEB3F3100C44FB8 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D06F31CEB3F3100C44FB8 /* ContainerViewController.swift */; };
+		B56D06F61CEB46EC00C44FB8 /* SideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56D06F51CEB46EC00C44FB8 /* SideViewController.swift */; };
+		B56FBF421CE9EA03004C8D04 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56FBF411CE9EA03004C8D04 /* MainScreenViewController.swift */; };
+		B580CB8D1CE9D2A0001EBC40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580CB8C1CE9D2A0001EBC40 /* AppDelegate.swift */; };
+		B580CB8F1CE9D2A0001EBC40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580CB8E1CE9D2A0001EBC40 /* ViewController.swift */; };
+		B580CB921CE9D2A0001EBC40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B580CB901CE9D2A0001EBC40 /* Main.storyboard */; };
+		B580CB941CE9D2A0001EBC40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B580CB931CE9D2A0001EBC40 /* Assets.xcassets */; };
+		B580CB971CE9D2A0001EBC40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B580CB951CE9D2A0001EBC40 /* LaunchScreen.storyboard */; };
+		B580CBA21CE9D558001EBC40 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B580CB9E1CE9D558001EBC40 /* Bolts.framework */; };
+		B580CBA41CE9D558001EBC40 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B580CBA01CE9D558001EBC40 /* FBSDKLoginKit.framework */; };
+		B5D65D1E1CED82DD00575FAA /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D65D1D1CED82DD00575FAA /* IQKeyboardManagerSwift.framework */; };
+		B5ED99BF1D2E7E0C00700B00 /* webservices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED99BE1D2E7E0C00700B00 /* webservices.swift */; };
+		B5ED99C11D2E821900700B00 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5ED99C01D2E821900700B00 /* FBSDKShareKit.framework */; };
+		B5ED99C31D2E822000700B00 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5ED99C21D2E822000700B00 /* FBSDKCoreKit.framework */; };
+		B5ED99C51D2E8CE200700B00 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED99C41D2E8CE200700B00 /* Constants.swift */; };
+		B5F4A1BB1D227AF100E01C34 /* CVAuxiliaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1A01D227AF100E01C34 /* CVAuxiliaryView.swift */; };
+		B5F4A1BC1D227AF100E01C34 /* CVCalendarContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1A11D227AF100E01C34 /* CVCalendarContentViewController.swift */; };
+		B5F4A1BD1D227AF100E01C34 /* CVCalendarDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1A21D227AF100E01C34 /* CVCalendarDayView.swift */; };
+		B5F4A1BE1D227AF100E01C34 /* CVCalendarDayViewControlCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1A31D227AF100E01C34 /* CVCalendarDayViewControlCoordinator.swift */; };
+		B5F4A1BF1D227AF100E01C34 /* CVCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1A41D227AF100E01C34 /* CVCalendarManager.swift */; };
+		B5F4A1C01D227AF100E01C34 /* CVCalendarMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1A51D227AF100E01C34 /* CVCalendarMenuView.swift */; };
+		B5F4A1C11D227AF100E01C34 /* CVCalendarMenuViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1A61D227AF100E01C34 /* CVCalendarMenuViewDelegate.swift */; };
+		B5F4A1C21D227AF100E01C34 /* CVCalendarMonthContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1A71D227AF100E01C34 /* CVCalendarMonthContentViewController.swift */; };
+		B5F4A1C31D227AF100E01C34 /* CVCalendarMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1A81D227AF100E01C34 /* CVCalendarMonthView.swift */; };
+		B5F4A1C41D227AF100E01C34 /* CVCalendarTouchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1A91D227AF100E01C34 /* CVCalendarTouchController.swift */; };
+		B5F4A1C51D227AF100E01C34 /* CVCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1AA1D227AF100E01C34 /* CVCalendarView.swift */; };
+		B5F4A1C61D227AF100E01C34 /* CVCalendarViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1AB1D227AF100E01C34 /* CVCalendarViewAnimator.swift */; };
+		B5F4A1C71D227AF100E01C34 /* CVCalendarViewAnimatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1AC1D227AF100E01C34 /* CVCalendarViewAnimatorDelegate.swift */; };
+		B5F4A1C81D227AF100E01C34 /* CVCalendarViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1AD1D227AF100E01C34 /* CVCalendarViewAppearance.swift */; };
+		B5F4A1C91D227AF100E01C34 /* CVCalendarViewAppearanceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1AE1D227AF100E01C34 /* CVCalendarViewAppearanceDelegate.swift */; };
+		B5F4A1CA1D227AF100E01C34 /* CVCalendarViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1AF1D227AF100E01C34 /* CVCalendarViewDelegate.swift */; };
+		B5F4A1CB1D227AF100E01C34 /* CVCalendarViewPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1B01D227AF100E01C34 /* CVCalendarViewPresentationMode.swift */; };
+		B5F4A1CC1D227AF100E01C34 /* CVCalendarWeekContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1B11D227AF100E01C34 /* CVCalendarWeekContentViewController.swift */; };
+		B5F4A1CD1D227AF100E01C34 /* CVCalendarWeekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1B21D227AF100E01C34 /* CVCalendarWeekday.swift */; };
+		B5F4A1CE1D227AF100E01C34 /* CVCalendarWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1B31D227AF100E01C34 /* CVCalendarWeekView.swift */; };
+		B5F4A1CF1D227AF100E01C34 /* CVDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1B41D227AF100E01C34 /* CVDate.swift */; };
+		B5F4A1D01D227AF100E01C34 /* CVRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1B51D227AF100E01C34 /* CVRange.swift */; };
+		B5F4A1D11D227AF100E01C34 /* CVScrollDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1B61D227AF100E01C34 /* CVScrollDirection.swift */; };
+		B5F4A1D21D227AF100E01C34 /* CVSelectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1B71D227AF100E01C34 /* CVSelectionType.swift */; };
+		B5F4A1D31D227AF100E01C34 /* CVSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1B81D227AF100E01C34 /* CVSet.swift */; };
+		B5F4A1D41D227AF100E01C34 /* CVShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1B91D227AF100E01C34 /* CVShape.swift */; };
+		B5F4A1D51D227AF100E01C34 /* CVWeekdaySymbolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4A1BA1D227AF100E01C34 /* CVWeekdaySymbolType.swift */; };
+		B5FCD1701D07E92F00EA9426 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FCD16D1D07E92F00EA9426 /* EventManager.swift */; };
+		B5FCD1711D07E92F00EA9426 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FCD16E1D07E92F00EA9426 /* ExtensionViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04A52E054812E3A35F79ABE7 /* Pods-GoPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoPlay/Pods-GoPlay.debug.xcconfig"; sourceTree = "<group>"; };
+		4E71FFFA44E4938A3303A21F /* Pods_GoPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E10FEC5DA4773F6DFE65F3E /* Pods-GoPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoPlay/Pods-GoPlay.release.xcconfig"; sourceTree = "<group>"; };
+		B50A09441CEAEC92009B3D17 /* newGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newGoalViewController.swift; sourceTree = "<group>"; };
+		B50A09461CEAEF9D009B3D17 /* addGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addGoalViewController.swift; sourceTree = "<group>"; };
+		B52CB4F61D01821C008D2F2D /* dayShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dayShowViewController.swift; sourceTree = "<group>"; };
+		B5412C061D2A6CD400D54D1A /* GetInspiredViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetInspiredViewController.swift; sourceTree = "<group>"; };
+		B56D06E91CEB16E100C44FB8 /* missionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = missionViewController.swift; sourceTree = "<group>"; };
+		B56D06EF1CEB171300C44FB8 /* legalDisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = legalDisViewController.swift; sourceTree = "<group>"; };
+		B56D06F11CEB175100C44FB8 /* existingGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = existingGoalViewController.swift; sourceTree = "<group>"; };
+		B56D06F31CEB3F3100C44FB8 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		B56D06F51CEB46EC00C44FB8 /* SideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideViewController.swift; sourceTree = "<group>"; };
+		B56FBF411CE9EA03004C8D04 /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		B580CB891CE9D2A0001EBC40 /* GoPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B580CB8C1CE9D2A0001EBC40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B580CB8E1CE9D2A0001EBC40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B580CB911CE9D2A0001EBC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B580CB931CE9D2A0001EBC40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B580CB961CE9D2A0001EBC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B580CB981CE9D2A0001EBC40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B580CB9E1CE9D558001EBC40 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "Pods/../build/Release-iphoneos/Bolts.framework"; sourceTree = "<group>"; };
+		B580CB9F1CE9D558001EBC40 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "Pods/../build/Release-iphoneos/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		B580CBA01CE9D558001EBC40 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "Pods/../build/Release-iphoneos/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		B580CBA11CE9D558001EBC40 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "Pods/../build/Release-iphoneos/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		B5D65D1D1CED82DD00575FAA /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = "Pods/../build/Debug-iphoneos/IQKeyboardManagerSwift.framework"; sourceTree = "<group>"; };
+		B5ED99BE1D2E7E0C00700B00 /* webservices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webservices.swift; sourceTree = "<group>"; };
+		B5ED99C01D2E821900700B00 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../Library/Developer/Xcode/DerivedData/GoPlay-djfskbifqjogvvfvwcfrliupssia/Build/Products/Debug-iphonesimulator/FBSDKShareKit/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		B5ED99C21D2E822000700B00 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../Library/Developer/Xcode/DerivedData/GoPlay-djfskbifqjogvvfvwcfrliupssia/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		B5ED99C41D2E8CE200700B00 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B5F4A1A01D227AF100E01C34 /* CVAuxiliaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVAuxiliaryView.swift; sourceTree = "<group>"; };
+		B5F4A1A11D227AF100E01C34 /* CVCalendarContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarContentViewController.swift; sourceTree = "<group>"; };
+		B5F4A1A21D227AF100E01C34 /* CVCalendarDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarDayView.swift; sourceTree = "<group>"; };
+		B5F4A1A31D227AF100E01C34 /* CVCalendarDayViewControlCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarDayViewControlCoordinator.swift; sourceTree = "<group>"; };
+		B5F4A1A41D227AF100E01C34 /* CVCalendarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarManager.swift; sourceTree = "<group>"; };
+		B5F4A1A51D227AF100E01C34 /* CVCalendarMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarMenuView.swift; sourceTree = "<group>"; };
+		B5F4A1A61D227AF100E01C34 /* CVCalendarMenuViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarMenuViewDelegate.swift; sourceTree = "<group>"; };
+		B5F4A1A71D227AF100E01C34 /* CVCalendarMonthContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarMonthContentViewController.swift; sourceTree = "<group>"; };
+		B5F4A1A81D227AF100E01C34 /* CVCalendarMonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarMonthView.swift; sourceTree = "<group>"; };
+		B5F4A1A91D227AF100E01C34 /* CVCalendarTouchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarTouchController.swift; sourceTree = "<group>"; };
+		B5F4A1AA1D227AF100E01C34 /* CVCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarView.swift; sourceTree = "<group>"; };
+		B5F4A1AB1D227AF100E01C34 /* CVCalendarViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarViewAnimator.swift; sourceTree = "<group>"; };
+		B5F4A1AC1D227AF100E01C34 /* CVCalendarViewAnimatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarViewAnimatorDelegate.swift; sourceTree = "<group>"; };
+		B5F4A1AD1D227AF100E01C34 /* CVCalendarViewAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarViewAppearance.swift; sourceTree = "<group>"; };
+		B5F4A1AE1D227AF100E01C34 /* CVCalendarViewAppearanceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarViewAppearanceDelegate.swift; sourceTree = "<group>"; };
+		B5F4A1AF1D227AF100E01C34 /* CVCalendarViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarViewDelegate.swift; sourceTree = "<group>"; };
+		B5F4A1B01D227AF100E01C34 /* CVCalendarViewPresentationMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarViewPresentationMode.swift; sourceTree = "<group>"; };
+		B5F4A1B11D227AF100E01C34 /* CVCalendarWeekContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarWeekContentViewController.swift; sourceTree = "<group>"; };
+		B5F4A1B21D227AF100E01C34 /* CVCalendarWeekday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarWeekday.swift; sourceTree = "<group>"; };
+		B5F4A1B31D227AF100E01C34 /* CVCalendarWeekView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarWeekView.swift; sourceTree = "<group>"; };
+		B5F4A1B41D227AF100E01C34 /* CVDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVDate.swift; sourceTree = "<group>"; };
+		B5F4A1B51D227AF100E01C34 /* CVRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVRange.swift; sourceTree = "<group>"; };
+		B5F4A1B61D227AF100E01C34 /* CVScrollDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVScrollDirection.swift; sourceTree = "<group>"; };
+		B5F4A1B71D227AF100E01C34 /* CVSelectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVSelectionType.swift; sourceTree = "<group>"; };
+		B5F4A1B81D227AF100E01C34 /* CVSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVSet.swift; sourceTree = "<group>"; };
+		B5F4A1B91D227AF100E01C34 /* CVShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVShape.swift; sourceTree = "<group>"; };
+		B5F4A1BA1D227AF100E01C34 /* CVWeekdaySymbolType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVWeekdaySymbolType.swift; sourceTree = "<group>"; };
+		B5FCD16D1D07E92F00EA9426 /* EventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
+		B5FCD16E1D07E92F00EA9426 /* ExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B580CB861CE9D2A0001EBC40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5ED99C31D2E822000700B00 /* FBSDKCoreKit.framework in Frameworks */,
+				B5ED99C11D2E821900700B00 /* FBSDKShareKit.framework in Frameworks */,
+				B5D65D1E1CED82DD00575FAA /* IQKeyboardManagerSwift.framework in Frameworks */,
+				B580CBA21CE9D558001EBC40 /* Bolts.framework in Frameworks */,
+				B580CBA41CE9D558001EBC40 /* FBSDKLoginKit.framework in Frameworks */,
+				7C98456E79FAB333BBD5EABD /* Pods_GoPlay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A17AF431DF1197E48C1C520 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04A52E054812E3A35F79ABE7 /* Pods-GoPlay.debug.xcconfig */,
+				8E10FEC5DA4773F6DFE65F3E /* Pods-GoPlay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B56D06E81CEB16BD00C44FB8 /* Side Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B56D06E91CEB16E100C44FB8 /* missionViewController.swift */,
+				B56D06EF1CEB171300C44FB8 /* legalDisViewController.swift */,
+				B56D06F11CEB175100C44FB8 /* existingGoalViewController.swift */,
+			);
+			path = "Side Controllers";
+			sourceTree = "<group>";
+		};
+		B580CB801CE9D2A0001EBC40 = {
+			isa = PBXGroup;
+			children = (
+				B580CB8B1CE9D2A0001EBC40 /* GoPlay */,
+				B580CB8A1CE9D2A0001EBC40 /* Products */,
+				BEA43AFE6E3AC3D5B4086A9F /* Frameworks */,
+				8A17AF431DF1197E48C1C520 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B580CB8A1CE9D2A0001EBC40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B580CB891CE9D2A0001EBC40 /* GoPlay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B580CB8B1CE9D2A0001EBC40 /* GoPlay */ = {
+			isa = PBXGroup;
+			children = (
+				B5ED99C41D2E8CE200700B00 /* Constants.swift */,
+				B5ED99BD1D2E7DFB00700B00 /* webservices */,
+				B5F4A19E1D227AE700E01C34 /* Libs */,
+				B5FCD16B1D07E92F00EA9426 /* Helpers Class */,
+				B56D06E81CEB16BD00C44FB8 /* Side Controllers */,
+				B580CB8C1CE9D2A0001EBC40 /* AppDelegate.swift */,
+				B580CB8E1CE9D2A0001EBC40 /* ViewController.swift */,
+				B56FBF411CE9EA03004C8D04 /* MainScreenViewController.swift */,
+				B50A09441CEAEC92009B3D17 /* newGoalViewController.swift */,
+				B50A09461CEAEF9D009B3D17 /* addGoalViewController.swift */,
+				B580CB901CE9D2A0001EBC40 /* Main.storyboard */,
+				B580CB931CE9D2A0001EBC40 /* Assets.xcassets */,
+				B580CB951CE9D2A0001EBC40 /* LaunchScreen.storyboard */,
+				B580CB981CE9D2A0001EBC40 /* Info.plist */,
+				B52CB4F61D01821C008D2F2D /* dayShowViewController.swift */,
+				B56D06F31CEB3F3100C44FB8 /* ContainerViewController.swift */,
+				B56D06F51CEB46EC00C44FB8 /* SideViewController.swift */,
+				B5412C061D2A6CD400D54D1A /* GetInspiredViewController.swift */,
+			);
+			path = GoPlay;
+			sourceTree = "<group>";
+		};
+		B5ED99BD1D2E7DFB00700B00 /* webservices */ = {
+			isa = PBXGroup;
+			children = (
+				B5ED99BE1D2E7E0C00700B00 /* webservices.swift */,
+			);
+			name = webservices;
+			sourceTree = "<group>";
+		};
+		B5F4A19E1D227AE700E01C34 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				B5F4A19F1D227AF100E01C34 /* CVCalendar */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		B5F4A19F1D227AF100E01C34 /* CVCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				B5F4A1A01D227AF100E01C34 /* CVAuxiliaryView.swift */,
+				B5F4A1A11D227AF100E01C34 /* CVCalendarContentViewController.swift */,
+				B5F4A1A21D227AF100E01C34 /* CVCalendarDayView.swift */,
+				B5F4A1A31D227AF100E01C34 /* CVCalendarDayViewControlCoordinator.swift */,
+				B5F4A1A41D227AF100E01C34 /* CVCalendarManager.swift */,
+				B5F4A1A51D227AF100E01C34 /* CVCalendarMenuView.swift */,
+				B5F4A1A61D227AF100E01C34 /* CVCalendarMenuViewDelegate.swift */,
+				B5F4A1A71D227AF100E01C34 /* CVCalendarMonthContentViewController.swift */,
+				B5F4A1A81D227AF100E01C34 /* CVCalendarMonthView.swift */,
+				B5F4A1A91D227AF100E01C34 /* CVCalendarTouchController.swift */,
+				B5F4A1AA1D227AF100E01C34 /* CVCalendarView.swift */,
+				B5F4A1AB1D227AF100E01C34 /* CVCalendarViewAnimator.swift */,
+				B5F4A1AC1D227AF100E01C34 /* CVCalendarViewAnimatorDelegate.swift */,
+				B5F4A1AD1D227AF100E01C34 /* CVCalendarViewAppearance.swift */,
+				B5F4A1AE1D227AF100E01C34 /* CVCalendarViewAppearanceDelegate.swift */,
+				B5F4A1AF1D227AF100E01C34 /* CVCalendarViewDelegate.swift */,
+				B5F4A1B01D227AF100E01C34 /* CVCalendarViewPresentationMode.swift */,
+				B5F4A1B11D227AF100E01C34 /* CVCalendarWeekContentViewController.swift */,
+				B5F4A1B21D227AF100E01C34 /* CVCalendarWeekday.swift */,
+				B5F4A1B31D227AF100E01C34 /* CVCalendarWeekView.swift */,
+				B5F4A1B41D227AF100E01C34 /* CVDate.swift */,
+				B5F4A1B51D227AF100E01C34 /* CVRange.swift */,
+				B5F4A1B61D227AF100E01C34 /* CVScrollDirection.swift */,
+				B5F4A1B71D227AF100E01C34 /* CVSelectionType.swift */,
+				B5F4A1B81D227AF100E01C34 /* CVSet.swift */,
+				B5F4A1B91D227AF100E01C34 /* CVShape.swift */,
+				B5F4A1BA1D227AF100E01C34 /* CVWeekdaySymbolType.swift */,
+			);
+			path = CVCalendar;
+			sourceTree = "<group>";
+		};
+		B5FCD16B1D07E92F00EA9426 /* Helpers Class */ = {
+			isa = PBXGroup;
+			children = (
+				B5FCD16D1D07E92F00EA9426 /* EventManager.swift */,
+				B5FCD16E1D07E92F00EA9426 /* ExtensionViewController.swift */,
+			);
+			path = "Helpers Class";
+			sourceTree = "<group>";
+		};
+		BEA43AFE6E3AC3D5B4086A9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5ED99C21D2E822000700B00 /* FBSDKCoreKit.framework */,
+				B5ED99C01D2E821900700B00 /* FBSDKShareKit.framework */,
+				B5D65D1D1CED82DD00575FAA /* IQKeyboardManagerSwift.framework */,
+				B580CB9E1CE9D558001EBC40 /* Bolts.framework */,
+				B580CB9F1CE9D558001EBC40 /* FBSDKCoreKit.framework */,
+				B580CBA01CE9D558001EBC40 /* FBSDKLoginKit.framework */,
+				B580CBA11CE9D558001EBC40 /* FBSDKShareKit.framework */,
+				4E71FFFA44E4938A3303A21F /* Pods_GoPlay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B580CB881CE9D2A0001EBC40 /* GoPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B580CB9B1CE9D2A0001EBC40 /* Build configuration list for PBXNativeTarget "GoPlay" */;
+			buildPhases = (
+				0856F92702761FC5CD6E22E5 /* [CP] Check Pods Manifest.lock */,
+				B580CB851CE9D2A0001EBC40 /* Sources */,
+				B580CB861CE9D2A0001EBC40 /* Frameworks */,
+				B580CB871CE9D2A0001EBC40 /* Resources */,
+				232566103213BCD0F1B83798 /* [CP] Embed Pods Frameworks */,
+				D9E2601E9A250655DA02A317 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoPlay;
+			productName = GoPlay;
+			productReference = B580CB891CE9D2A0001EBC40 /* GoPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B580CB811CE9D2A0001EBC40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = WorksDelight;
+				TargetAttributes = {
+					B580CB881CE9D2A0001EBC40 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = B580CB841CE9D2A0001EBC40 /* Build configuration list for PBXProject "GoPlay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B580CB801CE9D2A0001EBC40;
+			productRefGroup = B580CB8A1CE9D2A0001EBC40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B580CB881CE9D2A0001EBC40 /* GoPlay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B580CB871CE9D2A0001EBC40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B580CB971CE9D2A0001EBC40 /* LaunchScreen.storyboard in Resources */,
+				B580CB941CE9D2A0001EBC40 /* Assets.xcassets in Resources */,
+				B580CB921CE9D2A0001EBC40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0856F92702761FC5CD6E22E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		232566103213BCD0F1B83798 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoPlay/Pods-GoPlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9E2601E9A250655DA02A317 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoPlay/Pods-GoPlay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B580CB851CE9D2A0001EBC40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F4A1C71D227AF100E01C34 /* CVCalendarViewAnimatorDelegate.swift in Sources */,
+				B580CB8F1CE9D2A0001EBC40 /* ViewController.swift in Sources */,
+				B5F4A1BB1D227AF100E01C34 /* CVAuxiliaryView.swift in Sources */,
+				B5F4A1CE1D227AF100E01C34 /* CVCalendarWeekView.swift in Sources */,
+				B5F4A1CF1D227AF100E01C34 /* CVDate.swift in Sources */,
+				B5F4A1D21D227AF100E01C34 /* CVSelectionType.swift in Sources */,
+				B5F4A1C91D227AF100E01C34 /* CVCalendarViewAppearanceDelegate.swift in Sources */,
+				B5F4A1D01D227AF100E01C34 /* CVRange.swift in Sources */,
+				B5F4A1D51D227AF100E01C34 /* CVWeekdaySymbolType.swift in Sources */,
+				B580CB8D1CE9D2A0001EBC40 /* AppDelegate.swift in Sources */,
+				B56D06EA1CEB16E100C44FB8 /* missionViewController.swift in Sources */,
+				B5F4A1D41D227AF100E01C34 /* CVShape.swift in Sources */,
+				B5F4A1C61D227AF100E01C34 /* CVCalendarViewAnimator.swift in Sources */,
+				B5F4A1C41D227AF100E01C34 /* CVCalendarTouchController.swift in Sources */,
+				B5F4A1C21D227AF100E01C34 /* CVCalendarMonthContentViewController.swift in Sources */,
+				B56D06F21CEB175100C44FB8 /* existingGoalViewController.swift in Sources */,
+				B5ED99BF1D2E7E0C00700B00 /* webservices.swift in Sources */,
+				B50A09451CEAEC92009B3D17 /* newGoalViewController.swift in Sources */,
+				B5412C071D2A6CD400D54D1A /* GetInspiredViewController.swift in Sources */,
+				B5F4A1CB1D227AF100E01C34 /* CVCalendarViewPresentationMode.swift in Sources */,
+				B5F4A1C51D227AF100E01C34 /* CVCalendarView.swift in Sources */,
+				B56D06F01CEB171300C44FB8 /* legalDisViewController.swift in Sources */,
+				B5F4A1C11D227AF100E01C34 /* CVCalendarMenuViewDelegate.swift in Sources */,
+				B5ED99C51D2E8CE200700B00 /* Constants.swift in Sources */,
+				B5F4A1D31D227AF100E01C34 /* CVSet.swift in Sources */,
+				B5FCD1711D07E92F00EA9426 /* ExtensionViewController.swift in Sources */,
+				B5F4A1C31D227AF100E01C34 /* CVCalendarMonthView.swift in Sources */,
+				B5F4A1CA1D227AF100E01C34 /* CVCalendarViewDelegate.swift in Sources */,
+				B5F4A1C81D227AF100E01C34 /* CVCalendarViewAppearance.swift in Sources */,
+				B52CB4F71D01821C008D2F2D /* dayShowViewController.swift in Sources */,
+				B50A09471CEAEF9D009B3D17 /* addGoalViewController.swift in Sources */,
+				B56D06F61CEB46EC00C44FB8 /* SideViewController.swift in Sources */,
+				B56FBF421CE9EA03004C8D04 /* MainScreenViewController.swift in Sources */,
+				B56D06F41CEB3F3100C44FB8 /* ContainerViewController.swift in Sources */,
+				B5F4A1BC1D227AF100E01C34 /* CVCalendarContentViewController.swift in Sources */,
+				B5F4A1C01D227AF100E01C34 /* CVCalendarMenuView.swift in Sources */,
+				B5F4A1BD1D227AF100E01C34 /* CVCalendarDayView.swift in Sources */,
+				B5F4A1BF1D227AF100E01C34 /* CVCalendarManager.swift in Sources */,
+				B5F4A1CD1D227AF100E01C34 /* CVCalendarWeekday.swift in Sources */,
+				B5F4A1CC1D227AF100E01C34 /* CVCalendarWeekContentViewController.swift in Sources */,
+				B5FCD1701D07E92F00EA9426 /* EventManager.swift in Sources */,
+				B5F4A1D11D227AF100E01C34 /* CVScrollDirection.swift in Sources */,
+				B5F4A1BE1D227AF100E01C34 /* CVCalendarDayViewControlCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B580CB901CE9D2A0001EBC40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B580CB911CE9D2A0001EBC40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B580CB951CE9D2A0001EBC40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B580CB961CE9D2A0001EBC40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B580CB991CE9D2A0001EBC40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B580CB9A1CE9D2A0001EBC40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B580CB9C1CE9D2A0001EBC40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04A52E054812E3A35F79ABE7 /* Pods-GoPlay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = GoPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GoPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B580CB9D1CE9D2A0001EBC40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E10FEC5DA4773F6DFE65F3E /* Pods-GoPlay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = GoPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GoPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B580CB841CE9D2A0001EBC40 /* Build configuration list for PBXProject "GoPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B580CB991CE9D2A0001EBC40 /* Debug */,
+				B580CB9A1CE9D2A0001EBC40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B580CB9B1CE9D2A0001EBC40 /* Build configuration list for PBXNativeTarget "GoPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B580CB9C1CE9D2A0001EBC40 /* Debug */,
+				B580CB9D1CE9D2A0001EBC40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B580CB811CE9D2A0001EBC40 /* Project object */;
+}

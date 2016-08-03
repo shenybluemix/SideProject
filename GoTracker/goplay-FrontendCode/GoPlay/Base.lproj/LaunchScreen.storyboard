@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start-bkg" translatesAutoresizingMaskIntoConstraints="NO" id="Mii-q7-BMW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="GOAL TRACKER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5a-aF-lvv">
+                                <rect key="frame" x="68" y="116" width="238" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="LXc-Ld-5fk"/>
+                                    <constraint firstAttribute="height" constant="92" id="cbS-a4-Prz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="A STEP CLOSER TO SUCCESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KR-Pp-TKu">
+                                <rect key="frame" x="68" y="182" width="238" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="G0J-Kz-KzM">
+                                <rect key="frame" x="125" y="253" width="125" height="161"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="6oz-ly-kcJ"/>
+                                    <constraint firstAttribute="height" constant="161" id="fAs-cE-3Ll"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Mii-q7-BMW" secondAttribute="trailing" id="0Bp-Pb-ROm"/>
+                            <constraint firstItem="0KR-Pp-TKu" firstAttribute="top" secondItem="q5a-aF-lvv" secondAttribute="bottom" constant="-26" id="R2u-Ck-lbq"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Mii-q7-BMW" secondAttribute="bottom" id="ZeQ-tB-ydZ"/>
+                            <constraint firstItem="q5a-aF-lvv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bAm-7X-Y7v"/>
+                            <constraint firstItem="0KR-Pp-TKu" firstAttribute="trailing" secondItem="q5a-aF-lvv" secondAttribute="trailing" id="ehz-xT-VmX"/>
+                            <constraint firstItem="G0J-Kz-KzM" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hbh-FM-ph4"/>
+                            <constraint firstItem="Mii-q7-BMW" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="nsY-eI-u6m"/>
+                            <constraint firstItem="G0J-Kz-KzM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ovJ-hi-I2P"/>
+                            <constraint firstItem="0KR-Pp-TKu" firstAttribute="leading" secondItem="q5a-aF-lvv" secondAttribute="leading" id="qNb-2i-XXv"/>
+                            <constraint firstItem="Mii-q7-BMW" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="wFB-By-dez"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="374.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="143" height="177"/>
+        <image name="start-bkg" width="320" height="336"/>
+    </resources>
+</document>
