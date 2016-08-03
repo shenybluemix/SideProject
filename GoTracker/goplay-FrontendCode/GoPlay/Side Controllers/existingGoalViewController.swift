@@ -18,7 +18,7 @@ class existingGoalViewController: ExtensionViewController,webServicesDelegates {
     var goalNamePro:String = String()
 
     var predicateArray:NSMutableArray = NSMutableArray()
-    var numberofTimes:NSInteger?
+    var numberofTimes:Int = Int()
     
     @IBOutlet var percentage: UILabel!
     @IBOutlet var goalName: UILabel!
@@ -60,13 +60,14 @@ class existingGoalViewController: ExtensionViewController,webServicesDelegates {
         
        
         let userinfo : NSDictionary =    (notif.objectForKey("value") as! UILocalNotification).userInfo!
+        print(userinfo)
+      //  let noofdays:String = userinfo.objectForKey("daysToShow") as! String
+        let daysofSuccess:String = userinfo.objectForKey("daysofSuccess") as! String
+
         
+        numberofTimes = Int(daysofSuccess)!
         
-        let noofdays:String = userinfo.objectForKey("daysToShow") as! String
-        
-        
-        
-        self.percentage.text = noofdays
+        self.percentage.text = daysofSuccess
         
         print(predicateArray)
     }
@@ -77,37 +78,82 @@ class existingGoalViewController: ExtensionViewController,webServicesDelegates {
         self.monthLabel.text = CVDate(date: NSDate()).globalDescription
 
         
-        if NSUserDefaults.standardUserDefaults().objectForKey(goalsArray) != nil {
-            for item in (NSUserDefaults.standardUserDefaults().objectForKey(goalsArray) as! NSArray) {
-                
-                print(item)
-                if "\(item.objectForKey("goal_id")!)" == self.goalId {
-                    let arraay:NSMutableArray = item.objectForKey("status")! as! NSMutableArray
-                    let predicate = NSPredicate(format: "status = 'done'")
-                    let predArray = NSMutableArray(array: arraay.filteredArrayUsingPredicate(predicate))
-                    
-                    for dictt in predArray {
-                        self.predicateArray.addObject(dictt.objectForKey("date")!)
-                    }
-                    print(self.predicateArray)
-                }
-            }
-        }
+//        if NSUserDefaults.standardUserDefaults().objectForKey(goalsArray) != nil {
+//            for item in (NSUserDefaults.standardUserDefaults().objectForKey(goalsArray) as! NSArray) {
+//                
+//                print(item)
+//                if "\(item.objectForKey("goal_id")!)" == self.goalId {
+//                    let arraay:NSMutableArray = item.objectForKey("status")! as! NSMutableArray
+//                    let predicate = NSPredicate(format: "status = 'done'")
+//                    let predArray = NSMutableArray(array: arraay.filteredArrayUsingPredicate(predicate))
+//                    
+//                    for dictt in predArray {
+//                        self.predicateArray.addObject(dictt.objectForKey("date")!)
+//                    }
+//                    print(self.predicateArray)
+//                }
+//            }
+//        }
        
     }
+    override func viewWillDisappear(animated: Bool) {
+        
+        print(EventManager.sharedInstance.getAPersistedLocalNotificationWithId(self.goalId))
+        
+        
+        let notifDic:NSDictionary = EventManager.sharedInstance.getAPersistedLocalNotificationWithId(self.goalId)!
+        
+        
+        let notification : UILocalNotification =   (notifDic.objectForKey("value") as! UILocalNotification)
+        
+      
+        let userinfo : NSDictionary =    (notifDic.objectForKey("value") as! UILocalNotification).userInfo!
+        let noofdays:String = userinfo.objectForKey("daysToShow") as! String
+        let daysofSuccess:String = String(numberofTimes)
 
+        EventManager.sharedInstance.deleteAPersistedLocalNotification(self.goalId)
+
+        
+        EventManager.sharedInstance.createNotification(notification.alertBody!, notiTitle: notification.alertTitle!, days: noofdays ,goalId: "\(self.goalId)",daysofSuccess: daysofSuccess)
+
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
  
     func deleteGoalLocally() -> Void {
-        EventManager.sharedInstance.deleteAPersistedLocalNotification(goalId)
-        let getNavigation:UINavigationController = self.slideMenuController()!.mainViewController as! UINavigationController
-        getNavigation.popViewControllerAnimated(true)
+        self.showAlert()
+        
+            }
+
+    func showAlert() {
+        let alertController = UIAlertController(title: "Are you sure?", message: nil, preferredStyle: .Alert)
+        
+        let defaultAction = UIAlertAction(title: "No", style: .Default, handler: nil)
+        
+        let callActionHandler = { (action:UIAlertAction!) -> Void in
+          
+            EventManager.sharedInstance.deleteAPersistedLocalNotification(self.goalId)
+            let getNavigation:UINavigationController = self.slideMenuController()!.mainViewController as! UINavigationController
+            getNavigation.popViewControllerAnimated(true)
+ 
+        
+        }
+        
+        
+        let yesAction = UIAlertAction(title: "Yes", style: .Default, handler: callActionHandler)
+       
+        
+        alertController.addAction(defaultAction)
+        alertController.addAction(yesAction)
+
+
+        
+        presentViewController(alertController, animated: true, completion: nil)
     }
-
-
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDayEventSegue" {
             let destCtrl:dayShowViewController = segue.destinationViewController as! dayShowViewController
@@ -222,6 +268,8 @@ extension existingGoalViewController: CVCalendarViewDelegate, CVCalendarMenuView
 //            webservices.sharedInstance.postDataToServer(jsonParms, url: updateDaySuccess)
 //            
            self.selectionSet.remove(dayView)
+            numberofTimes-=1;
+            self.percentage.text = String( numberofTimes)
             
         } else {
             
@@ -241,6 +289,11 @@ extension existingGoalViewController: CVCalendarViewDelegate, CVCalendarMenuView
 //            webservices.sharedInstance.postDataToServer(jsonParms, url: addDaySuccess)
             
             self.selectionSet.insert(dayView)
+            numberofTimes+=1;
+
+            self.percentage.text = String( numberofTimes)
+
+
         }
     }
     

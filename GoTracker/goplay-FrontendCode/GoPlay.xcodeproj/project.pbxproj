@@ -63,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		04A52E054812E3A35F79ABE7 /* Pods-GoPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoPlay/Pods-GoPlay.debug.xcconfig"; sourceTree = "<group>"; };
+		4107FF1C1D4604C200EA61C9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		4E71FFFA44E4938A3303A21F /* Pods_GoPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E10FEC5DA4773F6DFE65F3E /* Pods-GoPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoPlay/Pods-GoPlay.release.xcconfig"; sourceTree = "<group>"; };
 		B50A09441CEAEC92009B3D17 /* newGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newGoalViewController.swift; sourceTree = "<group>"; };
@@ -263,6 +264,7 @@
 		BEA43AFE6E3AC3D5B4086A9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4107FF1C1D4604C200EA61C9 /* StoreKit.framework */,
 				B5ED99C21D2E822000700B00 /* FBSDKCoreKit.framework */,
 				B5ED99C01D2E821900700B00 /* FBSDKShareKit.framework */,
 				B5D65D1D1CED82DD00575FAA /* IQKeyboardManagerSwift.framework */,

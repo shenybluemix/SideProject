@@ -18,7 +18,7 @@ class EventManager: NSObject {
     
     
     //Creating Notification Method
-    func createNotification(notiBody:String , notiTitle:String , days:String , goalId:String)
+    func createNotification(notiBody:String , notiTitle:String , days:String , goalId:String,daysofSuccess:String)
     {
         // Shedule Notification
         let notification = UILocalNotification()
@@ -28,7 +28,7 @@ class EventManager: NSObject {
         //notification.fireDate = dateTime.dateByAddingTimeInterval(60)
         notification.alertBody = notiBody
         notification.alertTitle = notiTitle
-        notification.userInfo = NSDictionary(objects: ["\(days)"], forKeys: ["daysToShow"]) as [NSObject : AnyObject]
+        notification.userInfo = NSDictionary(objects: ["\(days)","\(daysofSuccess)"], forKeys: ["daysToShow","daysofSuccess"]) as [NSObject : AnyObject]
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
     
         self.persistToUserDefaults(notification, goalId: goalId)

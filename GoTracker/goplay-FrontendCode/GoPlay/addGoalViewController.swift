@@ -178,7 +178,7 @@ class addGoalViewController: ExtensionViewController,webServicesDelegates {
         
         if !isEditGoal! {
             
-            EventManager.sharedInstance.createNotification(descText.text!, notiTitle: addToCategory!, days: self.numOfDays.text! ,goalId: "\(revDict.objectForKey("result")!.objectForKey("goal_id")!)")
+            EventManager.sharedInstance.createNotification(descText.text!, notiTitle: addToCategory!, days: self.numOfDays.text! ,goalId: "\(revDict.objectForKey("result")!.objectForKey("goal_id")!)",daysofSuccess: "0")
             let getNavigation:UINavigationController = self.slideMenuController()!.mainViewController as! UINavigationController
             getNavigation.popToRootViewControllerAnimated(true)
             
@@ -188,7 +188,7 @@ class addGoalViewController: ExtensionViewController,webServicesDelegates {
         if (isEditGoal!) {
             
             EventManager.sharedInstance.deleteAPersistedLocalNotification(goalID)
-            EventManager.sharedInstance.createNotification(descText.text!, notiTitle: addToCategory!, days: self.numOfDays.text! ,goalId: "\(revDict.objectForKey("result")!.objectForKey("goal_id")!)")
+            EventManager.sharedInstance.createNotification(descText.text!, notiTitle: addToCategory!, days: self.numOfDays.text! ,goalId: "\(revDict.objectForKey("result")!.objectForKey("goal_id")!)",daysofSuccess: "0")
             
             let getNavigation:UINavigationController = self.slideMenuController()!.mainViewController as! UINavigationController
             getNavigation.popToRootViewControllerAnimated(true)
@@ -196,3 +196,4 @@ class addGoalViewController: ExtensionViewController,webServicesDelegates {
         }
     }
 }
+
