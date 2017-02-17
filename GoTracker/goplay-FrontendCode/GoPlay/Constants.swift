@@ -23,12 +23,14 @@ let editGoal	 = "edit"
 let deleteGoal	 = "delete?id="
 
 
-let addDaySuccess	 = "http://worksdelight.com/goplay/api/goals/addSuccess"
-let updateDaySuccess	 = "http://worksdelight.com/goplay/api/goals/addSuccess"
+//let addDaySuccess	 = "http://worksdelight.com/goplay/api/goals/addSuccess"
+//let updateDaySuccess	 = "http://worksdelight.com/goplay/api/goals/addSuccess"
 let getAllUserGoals	 = "get?id="
 
-//let baseurl = "http://216.224.177.43:8080/goplay/"
 
-let baseurl = "http://149.56.103.193:8080/goplay/"
+//let baseurl = "http://216.224.177.43:8080/goplay/"
+//let baseurl = "http://149.56.103.193:8080/goplay/"
+
+let baseurl = "https://localhost:8443/goplay/"
 
         

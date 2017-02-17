@@ -9,6 +9,7 @@
 import UIKit
 
 
+
 class MainScreenViewController: ExtensionViewController,webServicesDelegates  {
     
     
@@ -30,9 +31,12 @@ class MainScreenViewController: ExtensionViewController,webServicesDelegates  {
         
       //  print(NSUserDefaults.standardUserDefaults().objectForKey(userLoginDictionary))
 
+        
         let userId:String = webservices.sharedInstance.userid!
         
         webservices.sharedInstance.delegate = self
+        
+        
         webservices.sharedInstance.getDataFromServer("\(baseurl+getAllUserGoals)\(userId)")
         
         

@@ -9,6 +9,7 @@ import java.util.List;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.SystemEnvironmentPropertySource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
@@ -37,12 +38,22 @@ public class GoalImpl implements GoalDao {
 	    Date date = new Date();
 	    String query = "insert into goals (category,description,number_of_days,start_date,user_id,created_at)values(?,?,?,?,?,?)";
 	    JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
-	    jdbcTemplate.update(query, new Object[] { model.getCategory(), model.getDescription(),
+
+		System.out.println("GaolDao.createGoal");
+		System.out.println("dataSource: "+ dataSource.toString());
+		System.out.println("model:" + model.getCategory()+ model.getDescription() + model.getNo_of_days() + model.getStart_date()+model.getUser_id());
+
+
+	     jdbcTemplate.update(query, new Object[] { model.getCategory(), model.getDescription(),
 		    model.getNo_of_days(), model.getStart_date(), model.getUser_id(), date });
+
+
 
 	    String find = "select id from goals where category=? and description=? and number_of_days=?  and start_date=?  and user_id=?  and created_at=? ";
 	    List<Integer> id = jdbcTemplate.query(find, new RowMapperId(), new Object[] { model.getCategory(),
 		    model.getDescription(), model.getNo_of_days(), model.getStart_date(), model.getUser_id(), date });
+
+		System.out.println("id: "+ id);
 
 	    if (!id.isEmpty())
 		return id.get(0);

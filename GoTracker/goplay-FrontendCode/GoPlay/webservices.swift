@@ -25,6 +25,8 @@ protocol webServicesDelegates {
 
 class webservices: NSObject {
     
+    
+    
     var delegate: webServicesDelegates? = nil
     var userid: String?
     
@@ -50,8 +52,8 @@ class webservices: NSObject {
         Alamofire.request(.POST, baseurl + url, parameters: parms)
             .responseJSON
             {response in
-                print(response.request)
-                print(response.response)
+                print("REQUEST: \(response.request)")
+                print("RESPONSE: \(response.response)")
                 if String(response.result) == "SUCCESS"{
                     
                     if let JSON = response.result.value
@@ -100,13 +102,37 @@ class webservices: NSObject {
         
         SVProgressHUD.show()
         
-        Alamofire.request(.GET, url,
-            parameters: nil ,encoding: .JSON)
+        /**
+        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
             .responseJSON { response in
+                print(response.request)  // original URL request
+                print(response.response) // URL response
+                print(response.data)     // server data
+                print(response.result)   // result of response serialization
+                
+                if let JSON = response.result.value {
+                    print("JSON: \(JSON)")
+                    
+                    SVProgressHUD.dismiss()
+                }
+        }
+        **/
+        
+        
+        Alamofire.request(.GET, "https://localhost:8443/goplay/get?id=1",
+            parameters: nil)
+            .responseJSON {
+                
+                response in
+                
+                print(response.request)  // original URL request
+                print(response.response) // URL response
+                print(response.data)     // server data
+                print(response.result)   // result of response serialization
                 
                 if let JSON = response.result.value
                 {
-                    // print("JSON: \(JSON)")
+                    print("JSON: \(JSON)")
                     
                     SVProgressHUD.dismiss()
                     
@@ -116,6 +142,8 @@ class webservices: NSObject {
                     }
                 }
         }
+
+      
     }
     
     
